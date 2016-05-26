@@ -37,7 +37,7 @@ public class Dreieck {
   
   /** zeichnet die Figur */
   public void zeichnen() {
-    // kLw= kZf.getGraphics();
+    kLw= kZf.getGraphics();
     Polygon eckpunkte;
     int x = zX + kZf.getInsets().left;
     int y = zY + kZf.getInsets().top;
