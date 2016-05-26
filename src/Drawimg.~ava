@@ -20,15 +20,12 @@ import java.util.Random;
 public class Drawimg {
   // Anfang Attribute 
   final BufferedImage image = ImageIO.read(new File("test.jpg"));
-  JFrame frame;
-  JPanel pane;
-  private int zX, zY;
+  JFrame frame = Zf;
   // Ende Attribute
   
   public Drawimg(FrmZeichnen Zf,int x,int y)throws IOException {
-    frame = Zf;
-    zX = x;
-    zY = y;
+    
+    
     JPanel pane = new JPanel() {
       @Override
       protected void paintComponent(Graphics g) {
@@ -39,32 +36,8 @@ public class Drawimg {
     
     frame.add(pane);
   }
-  public void update() {
-    JPanel pane = new JPanel() {
-      @Override
-      protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        g.drawImage(image, zX, zY, null);
-      }
-    };
-    
-    frame.repaint();
-  }
   public void del(){
-    frame.remove(pane);
-  }
-  public void setzePosition (int xPos, int yPos) {
-    zX = xPos;
-    zY = yPos;
-    
-  }
-  public int liesXPosition() {
-    return zX;
-  }
-  
-  /** liefert die y-Koordinate der Figur */
-  public int liesYPosition() {
-    return zY;
+    frame.
   }
   // Anfang Methoden
   // Ende Methoden

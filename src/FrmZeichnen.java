@@ -19,7 +19,7 @@ public class FrmZeichnen extends JFrame {
     setSize (400, 300);
     setLocation (380, 50);
     setTitle ("Zeichenfenster"); 
-    setResizable (false);
+    setResizable (true);
     Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
     int x = (d.width - getSize().width) / 2;
     int y = (d.height - getSize().height) / 2;
@@ -27,8 +27,7 @@ public class FrmZeichnen extends JFrame {
     setVisible(true); 
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   }
-    
     // Methoden: noch keine...      
     
     
-} // class FrmZeichnen
+  } // class FrmZeichnen

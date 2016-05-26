@@ -2,7 +2,8 @@
 File0=Drawimg.java
 File1=Dreieck.java
 File2=FrmZeichnen.java
-File3=testzeichnen.java
+File3=test.java
+File4=testzeichnen.java
 
 [Box:  - Drawimg]
 X=1249
@@ -37,6 +38,16 @@ FontName=MS Sans Serif
 [Box:  - FrmZeichnen]
 X=690
 Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=1
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - test]
+X=442
+Y=30
 MinVis=0
 ShowParameter=4
 SortOrder=1
