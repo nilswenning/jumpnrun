@@ -21,7 +21,7 @@ public class Drawimg {
   // Anfang Attribute 
   final BufferedImage image = ImageIO.read(new File("test.jpg"));
   JFrame frame;
-  JPanel pane;
+  JPanel pane = new JPanel();
   private int zX, zY;
   // Ende Attribute
   
@@ -38,6 +38,8 @@ public class Drawimg {
     };
     
     frame.add(pane);
+    frame.revalidate();
+    
   }
   public void update() {
     JPanel pane = new JPanel() {
@@ -51,7 +53,7 @@ public class Drawimg {
     frame.repaint();
   }
   public void del(){
-    frame.remove(pane);
+    ;
   }
   public void setzePosition (int xPos, int yPos) {
     zX = xPos;

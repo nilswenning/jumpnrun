@@ -14,13 +14,12 @@ public class testzeichnen {
     
     window = new FrmZeichnen(); 
     window.setVisible (true);
-    
+    window.setSize(1500,1500);
     img = new Drawimg(window,0,0);
     for (int i = 0 ;i != 1000  ;i++ ) {
       System.out.println(i);
-      img.setzePosition(i,i);
-      img.update();
-      window.setSize(i, i);
+      img = new Drawimg(window,i,i);
+      img.del();
     } // end of for
   }        
     
